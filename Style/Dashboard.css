@@ -1,0 +1,470 @@
+<style>
+/* base CSS */
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #325050;
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 70%;
+}
+a {
+  color: #0d8ba1;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  text-decoration: none;
+}
+a:visited {
+    color: #1a5952;
+}
+a:hover, a:focus {
+    color: #0599c2;
+    text-decoration: underline;
+}
+abbr {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+header {
+  height: 230px;
+  padding: 20px 0 70px 0;
+
+  background: #2d6360 50% 0 url(url(https://drive.google.com/uc?id=0B7mx1qKR4qI1WXREbndIUUFRblE) no-repeat; /* old IE fallback */
+
+  background-attachment: scroll;
+  background-image: url(https://drive.google.com/uc?id=0B7mx1qKR4qI1WXREbndIUUFRblE);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+h1, h2 {
+  padding: 0 10%;
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+}
+h1 {
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-family: sans-serif;
+  font-size: 3.2em;
+  text-transform: uppercase;
+}
+h2 {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.6em;
+  font-style: italic;
+}
+h3 {
+  margin: 2em 0 0 0;
+  color: #2e484c;
+  font-family: sans-serif;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+p {
+  margin: 0.75em 0;
+  line-height: 2;
+}
+.page-wrapper {
+  position: relative;
+}
+.summary, .preamble {
+  width: 80%;
+  margin: 0 auto;
+}
+.supporting h3, .supporting p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.summary {
+  padding-top: 2em;
+}
+/* intro block links -- download HTML/CSS */
+.intro a, .intro a:visited {
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+
+  color: #809b7e;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.intro a:hover, .intro a:focus {
+  z-index: 2;
+  color: #fff;
+  background: #3d8a9f;
+  text-decoration: none;
+}
+.intro a:before, {
+    color: white;
+    margin-right: 10px;
+    background-color: #809b7e;
+    content: "?";
+}
+.intro a:hover:before, {
+    color: #809b7e;
+    background-color: white;
+    margin-right: 10px;
+    content: "?";
+}
+.indent{
+  left: 25px;
+}
+/* extra padding at the cutoffs */
+div.participation {
+  padding: 3em 0;
+  margin-top: 3em;
+}
+div.benefits {
+  padding-bottom: 3em;
+  margin-bottom: 3em;
+}
+div.participation h3, div.benefits h3 {
+  margin-top: 0;
+}
+div.participation p, div.benefits p {
+  margin-bottom: 0;
+}
+/* sidebar base styles */
+.sidebar {
+  background: #edf4f0;
+}
+.sidebar h3 {
+  display: none;
+}
+.sidebar a {
+  color: #607476;
+  text-decoration: none;
+}
+.sidebar a:hover, .sidebar a:focus {
+  color: #49968e;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+/* shared sidebar styling */
+.design-selection ul, .zen-resources ul {
+  margin: 0;
+}
+.design-selection li, .zen-resources li {
+  float: left;
+  width: 50%;
+  padding: 1.5em 10%;
+  border-top: solid 1px #d9e3dc;
+  color: #c0cac3;
+  font-style: italic;
+}
+.design-selection li:hover, .design-selection li:focus {
+  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* W3C */
+}
+.design-selection li:nth-child(2n+1), .zen-resources li:nth-child(2n+1) {
+  clear: left;
+}
+.design-selection .design-name, .zen-resources a, li.viewall a {
+  display: block;
+  margin-bottom: 0.25em;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+/* select a design */
+.design-selection h3 {
+  display: none;
+}
+.design-selection .designer-name {
+  color: #616857;
+  font-size: 0.9em;
+  font-style: normal;
+}
+.previous, .next {
+  left: 0;
+  z-index: 3;
+}
+.next {
+  left: auto;
+  right: 0;
+}
+/* busting out the credits block */
+.requirements p:nth-child(5) {
+  padding-bottom: 2em;
+}
+.supporting .requirements {
+  float: none;
+  clear: both;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.supporting .requirements a {
+  text-decoration: none;
+}
+.supporting .requirements a:hover, .supporting .requirements a:focus {
+  text-decoration: underline;
+}
+.supporting .requirements h3 {
+  padding-top: 0;
+}
+.requirements p:last-child {
+  width: auto;
+  padding: 1em 12%;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.4);
+  background: #3e5d67;
+
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+.requirements p:last-child a {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+}
+/* low-res CSS */
+@media only screen and (max-width: 600px) {
+
+  /* these download links make approximately zero sense
+     on a phone without a user-accessible file system. */
+  .summary p:last-child {
+    display: none;
+  }
+
+  /* type adjustments */
+  h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+  }
+  h1::before {
+    width: 50px;
+    height: 50px;
+  }
+  h2::before {
+    padding: 25px;
+  }
+
+  .requirements p:last-child {
+    padding: 1em 6%;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+
+  header {
+    height: 250px;
+    padding-top: 0;
+  }
+  h1 {
+    margin: 0;
+  }
+  h1::before {
+    display: block;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 -25px;
+    padding: 0 0 35px 0;
+  }
+  h2::before {
+    padding: 0;
+  }
+
+  .design-selection li, .zen-resources li {
+    padding: 1em 5%;
+  }
+
+}
+
+/* mid-res CSS */
+@media only screen and (max-width: 1132px) {
+  header {
+    border-top: solid 10px rgba(19, 67, 71, 0.9);
+  }
+  p, li {
+    font-size: 1.2em;
+  }
+}
+
+/* high-res CSS */
+@media only screen and (min-width: 1132px) {
+  body {
+    background: #ffffff;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(66%,#ffffff), color-stop(66%,#e5ede8), color-stop(100%,#e5ede8));
+    background: -webkit-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+    background: -o-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+    background: -ms-linear-gradient(left,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+    background: linear-gradient(to right,  #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+    font-size: 100%;
+  }
+  header {
+    width: 100%;
+    height: 310px;
+    padding: 0 10%;
+    border-top: solid 12px rgba(19, 67, 71, 0.8);
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  header::before, header::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    z-index: 3;
+    top: 9px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: rgba(0, 39, 43, 0.2);
+  }
+  header::after {
+    top: 306px;
+    height: 4px;
+    background: rgba(0, 39, 43, 0.075);
+  }
+  h1 {
+    display: inline-block;
+    position: relative;
+    margin: 15px 0 0 0;
+    padding: 60px 0 5px 0;
+  }
+  h2 {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0 5px 70px;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  /* main layout blocks */
+  nav, .supporting {
+    display: inline;
+  }
+  .summary, .preamble, .supporting div, .requirements h3, .requirements p {
+    float: left;
+    clear: left;
+    width: 66%;
+    padding: 1em 5% 1em 10%;
+  }
+  .explanation h3, .explanation p,
+  .participation h3, .participation p,
+  .benefits h3, .benefits p {
+    width: 100%;
+  }
+  .summary {
+    padding-top: 3.25em;
+  }
+  .requirements h3, .requirements p {
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+
+  /* coloured cutoff */
+  div.participation, div.benefits {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 38%;
+    margin: 0;
+  }
+  /* extra padding at the cutoffs */
+  div.participation, div.requirements {
+    padding-top: 4em;
+  }
+  div.explanation, div.benefits {
+    padding-bottom: 4em;
+  }
+  .requirements p:nth-child(5) {
+    padding-bottom: 4em;
+  }
+
+
+  .intro h3, .supporting h3 {
+    margin-top: 0;
+  }
+  .intro p:last-child, .supporting p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .requirements p:last-child {
+    padding-bottom: 3em;
+    padding-top: 3em;
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+  }
+  /* sidebar styling */
+  .design-selection, .zen-resources {
+    position: absolute;
+    top: 360px;
+    right: 0;
+    width: 33.3%;
+    padding: 0 0 20px 0;
+    margin: 0;
+    overflow: visible;
+    background: transparent;
+  }
+  .sidebar li {
+    float: none;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 29.4% 0 14.7%; /* 0 10% 0 5% of total width */
+  }
+  /* select a design */
+  .design-selection li:first-child {
+    border-top: 0;
+  }
+  .design-selection li:hover, .design-selection li:focus {
+    background: none;
+  }
+  /* resources navigation */
+  .zen-resources {
+    position: absolute;
+    top: 1310px;
+    right: 0;
+    width: 34%;
+    background: transparent;
+  }
+  .zen-resources h3 {
+    display: none;
+  }
+  .zen-resources ul {
+    width: 55.9%;
+    margin: 0 29.4% 0 14.7%;
+  }
+  .zen-resources li {
+    padding: 1.5em 0 1.25em 0;
+    margin: 0;
+  }
+}
+</style>
